@@ -1,0 +1,94 @@
+
+/* BASISSTIJL */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* NAVIGATIE */
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #222;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem 0.8rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #0e76a8;
+    color: #fff;
+}
+
+/* HERO */
+.hero {
+    padding: 5rem 2rem;
+    text-align: center;
+    background-color: #f4f8fb;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* FOOTER */
+footer {
+    background-color: #fafafa;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    font-size: 0.9rem;
+    color: #888;
+    border-top: 1px solid #eee;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
