@@ -6,6 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Rik Stigter - Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        .fade-in:nth-child(1) { animation-delay: 0.2s; }
+        .fade-in:nth-child(2) { animation-delay: 0.4s; }
+        .fade-in:nth-child(3) { animation-delay: 0.6s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
     <header class="navbar">
@@ -24,17 +41,17 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero fade-in">
             <h1>Portfolio</h1>
-            <p>Bekijk een selectie van mijn recente projecten, van filmproducties tot fotografie.</p>
+            <p>Bekijk mijn recente videoprojecten — strak geproduceerd, creatief gemonteerd en visueel sterk.</p>
         </section>
 
         <section class="media-grid">
-            <div class="media-card">
+            <div class="media-card fade-in">
                 <div class="video-wrapper">
                     <iframe
                         src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                        title="Promotievideo voor Merk X"
+                        title="Promotievideo"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
@@ -42,31 +59,31 @@
                 </div>
                 <div class="caption">
                     <h3>Promotievideo – Merk X</h3>
-                    <p>Korte social video voor online campagne gericht op storytelling en sfeer.</p>
+                    <p>Social media campagnevideo met focus op sfeer en emotie.</p>
                 </div>
             </div>
 
-            <div class="media-card">
+            <div class="media-card fade-in">
                 <div class="video-wrapper">
                     <iframe
-                        src="ttps://www.youtube.com/embed/GbIVBpDeUxU?si=HwlJAZZus6wunHzy"
-                        title="Eventregistratie"
+                        src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                        title="Evenement Video"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
                     </iframe>
                 </div>
                 <div class="caption">
-                    <h3>Eventregistratie – Conferentie Y</h3>
-                    <p>Samenvatting van een meerdaags event met interviews, sfeerbeelden en aftermovie.</p>
+                    <h3>Eventregistratie – Congres 2024</h3>
+                    <p>Aftermovie van een meerdaagse conferentie met interviews en sfeerbeelden.</p>
                 </div>
             </div>
 
-            <div class="media-card">
+            <div class="media-card fade-in">
                 <div class="video-wrapper">
                     <iframe
                         src="https://www.youtube.com/embed/ysz5S6PUM-U"
-                        title="Cinematische sfeerclip"
+                        title="Sfeerimpressie"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
@@ -74,7 +91,7 @@
                 </div>
                 <div class="caption">
                     <h3>Sfeerclip – Locatie Z</h3>
-                    <p>Visuele sfeerimpressie voor branding en presentatie van een fysieke locatie.</p>
+                    <p>Cinematische weergave van een locatie of event met drone- en slow motion beelden.</p>
                 </div>
             </div>
         </section>
