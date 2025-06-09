@@ -7,20 +7,14 @@
     <title>Rik Stigter - Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
     <style>
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeInUp 0.8s ease forwards;
+        .video-container {
+            transition: transform 0.4s ease, box-shadow 0.3s ease;
+            transform-origin: center center;
         }
-        .fade-in:nth-child(1) { animation-delay: 0.2s; }
-        .fade-in:nth-child(2) { animation-delay: 0.4s; }
-        .fade-in:nth-child(3) { animation-delay: 0.6s; }
-
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .media-card:hover .video-container {
+            transform: scale(1.8);
+            z-index: 5;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
@@ -41,21 +35,23 @@
     </header>
 
     <main>
-        <section class="hero fade-in">
+        <section class="hero">
             <h1>Portfolio</h1>
             <p>Bekijk mijn recente videoprojecten — strak geproduceerd, creatief gemonteerd en visueel sterk.</p>
         </section>
 
         <section class="media-grid">
-            <div class="media-card fade-in">
-                <div class="video-wrapper">
-                    <iframe
-                        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                        title="Promotievideo"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
+            <div class="media-card">
+                <div class="video-container">
+                    <div class="video-wrapper">
+                        <iframe
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                            title="Promotievideo"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
                 </div>
                 <div class="caption">
                     <h3>Promotievideo – Merk X</h3>
@@ -63,15 +59,17 @@
                 </div>
             </div>
 
-            <div class="media-card fade-in">
-                <div class="video-wrapper">
-                    <iframe
-                        src="https://www.youtube.com/embed/tgbNymZ7vqY"
-                        title="Evenement Video"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
+            <div class="media-card">
+                <div class="video-container">
+                    <div class="video-wrapper">
+                        <iframe
+                            src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                            title="Evenement Video"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
                 </div>
                 <div class="caption">
                     <h3>Eventregistratie – Congres 2024</h3>
@@ -79,15 +77,17 @@
                 </div>
             </div>
 
-            <div class="media-card fade-in">
-                <div class="video-wrapper">
-                    <iframe
-                        src="https://www.youtube.com/embed/ysz5S6PUM-U"
-                        title="Sfeerimpressie"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
+            <div class="media-card">
+                <div class="video-container">
+                    <div class="video-wrapper">
+                        <iframe
+                            src="https://www.youtube.com/embed/ysz5S6PUM-U"
+                            title="Sfeerimpressie"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
                 </div>
                 <div class="caption">
                     <h3>Sfeerclip – Locatie Z</h3>
